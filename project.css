@@ -1,0 +1,50 @@
+body {
+    background-image: url(../project/wallpp\ \(1\).jpg);
+    background-position-y: center;
+    padding-left: 7%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+    background-size: cover;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin: 200;
+    background-color: #162ec7;
+}
+
+.memory-game {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.card {
+    background-image: url(../project/A_black_image.jpg);
+    width: 90px;
+    height: 110px;
+    image-rendering: crisp-edges;
+    background-color: #110ae99b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: aliceblue;
+    cursor: pointer;
+    border-radius: 2%;
+    box-shadow: 0 0 5px rgba(248, 242, 242, 0.863);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card.matched {
+    background-size: cover;
+    cursor: default;
+}
+
+.card.flipped {
+    background-image: url(../project/Solid_white_bordered.svg.webp
+    );
+    transform: rotateY(180deg);
+    background-color: rgb(86, 198, 226);
+}
